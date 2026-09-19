@@ -3,4 +3,12 @@ target/
 .DS_Store
 .idea/
 *.iml
-.vscode/
+*.log
+.settings/
+.classpath
+.project
+out/
+dependency-reduced-pom.xml
+Step4DestinationView_old.java
+installer-cache/
+scratch/

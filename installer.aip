@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="23.9" version="23.9" Modules="professional" RootPath="." Language="en" Id="{2804F723-B7EC-44F0-8C9C-D2297DA0BEF7}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_FINDEXE_TITLE" Value="Select the installation package for [|ProductName]" ValueLocId="AI.Property.FindExeTitle"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="Backup and Export IMAP Emails Safely to 17 Formats" ValueLocId="*"/>
+    <ROW Property="ARPHELPLINK" Value="https://www.prismimapbackup.com/support"/>
+    <ROW Property="ARPNOREPAIR" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="ARPPRODUCTICON" Value="logo.exe" Type="8"/>
+    <ROW Property="ARPURLINFOABOUT" Value="https://www.prismimapbackup.com"/>
+    <ROW Property="ARPURLUPDATEINFO" Value="https://www.prismimapbackup.com"/>
+    <ROW Property="BannerBitmap" Value="banner.jpg" MultiBuildValue="DefaultBuild:banner.bmp" Type="1" MsiKey="BannerBitmap"/>
+    <ROW Property="DialogBitmap" Value="dialog.jpg" MultiBuildValue="DefaultBuild:dialog.bmp" Type="1" MsiKey="DialogBitmap"/>
+    <ROW Property="Manufacturer" Value="Prism Software"/>
+    <ROW Property="ProductCode" Value="1033:{6EDCB719-1B57-43EB-8226-365F12E81530} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Prism IMAP Backup Tool"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Options="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
+    <ROW Property="UpgradeCode" Value="{6FD75502-33A3-4A53-A494-02F271A47B85}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60Display" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1" DirectoryOptions="3"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="PrismIMAPBackup_Dir" Directory_Parent="APPDIR" DefaultDir="PRISM-~1|Prism-IMAP-Backup" DirectoryOptions="3"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="app_Dir" Directory_Parent="PrismIMAPBackup_Dir" DefaultDir="app" DirectoryOptions="3"/>
+    <ROW Directory="bin_Dir" Directory_Parent="runtime_Dir" DefaultDir="bin" DirectoryOptions="3"/>
+    <ROW Directory="conf_Dir" Directory_Parent="runtime_Dir" DefaultDir="conf" DirectoryOptions="3"/>
+    <ROW Directory="java.base_Dir" Directory_Parent="legal_Dir" DefaultDir="JAVA~1.BAS|java.base" DirectoryOptions="3"/>
+    <ROW Directory="java.datatransfer_Dir" Directory_Parent="legal_Dir" DefaultDir="JAVA~1.DAT|java.datatransfer" DirectoryOptions="3"/>
+    <ROW Directory="java.desktop_Dir" Directory_Parent="legal_Dir" DefaultDir="JAVA~1.DES|java.desktop" DirectoryOptions="3"/>
+    <ROW Directory="java.logging_Dir" Directory_Parent="legal_Dir" DefaultDir="JAVA~1.LOG|java.logging" DirectoryOptions="3"/>
+    <ROW Directory="java.management_Dir" Directory_Parent="legal_Dir" DefaultDir="JAVA~1.MAN|java.management" DirectoryOptions="3"/>
+    <ROW Directory="java.naming_Dir" Directory_Parent="legal_Dir" DefaultDir="JAVA~1.NAM|java.naming" DirectoryOptions="3"/>
+    <ROW Directory="java.net.http_Dir" Directory_Parent="legal_Dir" DefaultDir="JAVANE~1.HTT|java.net.http" DirectoryOptions="3"/>
+    <ROW Directory="java.prefs_Dir" Directory_Parent="legal_Dir" DefaultDir="JAVA~1.PRE|java.prefs" DirectoryOptions="3"/>
+    <ROW Directory="java.security.sasl_Dir" Directory_Parent="legal_Dir" DefaultDir="JAVASE~1.SAS|java.security.sasl" DirectoryOptions="3"/>
+    <ROW Directory="java.sql_Dir" Directory_Parent="legal_Dir" DefaultDir="java.sql" DirectoryOptions="3"/>
+    <ROW Directory="java.transaction.xa_Dir" Directory_Parent="legal_Dir" DefaultDir="JAVATR~1.XA|java.transaction.xa" DirectoryOptions="3"/>
+    <ROW Directory="java.xml_Dir" Directory_Parent="legal_Dir" DefaultDir="java.xml" DirectoryOptions="3"/>
+    <ROW Directory="jdk.unsupported_Dir" Directory_Parent="legal_Dir" DefaultDir="JDK~1.UNS|jdk.unsupported" DirectoryOptions="3"/>
+    <ROW Directory="legal_Dir" Directory_Parent="runtime_Dir" DefaultDir="legal" DirectoryOptions="3"/>
+    <ROW Directory="lib_Dir" Directory_Parent="runtime_Dir" DefaultDir="lib" DirectoryOptions="3"/>
+    <ROW Directory="limited_Dir" Directory_Parent="policy_Dir" DefaultDir="limited" DirectoryOptions="3"/>
+    <ROW Directory="policy_Dir" Directory_Parent="security_Dir" DefaultDir="policy" DirectoryOptions="3"/>
+    <ROW Directory="runtime_Dir" Directory_Parent="PrismIMAPBackup_Dir" DefaultDir="runtime" DirectoryOptions="3"/>
+    <ROW Directory="security_1_Dir" Directory_Parent="lib_Dir" DefaultDir="security" DirectoryOptions="3"/>
+    <ROW Directory="security_Dir" Directory_Parent="conf_Dir" DefaultDir="security" DirectoryOptions="3"/>
+    <ROW Directory="server_Dir" Directory_Parent="bin_Dir" DefaultDir="server" DirectoryOptions="3"/>
+    <ROW Directory="unlimited_Dir" Directory_Parent="policy_Dir" DefaultDir="UNLIMI~1|unlimited" DirectoryOptions="3"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SideBySideGuidComponent">
+    <ROW Component="APPDIR" Value="{8A60909D-E992-4557-B5A7-A54399F6DB95}"/>
+    <ROW Component="ProductInformation" Value="{DB4A21E4-599D-4E72-8821-21F684AE1BA6}"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="AI_ExePath" ComponentId="{CBE89869-277D-429E-937A-AEB4BE7014C1}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
+    <ROW Component="APPDIR" ComponentId="{8A60909D-E992-4557-B5A7-A54399F6DB95}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="COPYRIGHT" ComponentId="{8BFC34C8-720F-4F73-8DD1-4BBA4B55296E}" Directory_="java.datatransfer_Dir" Attributes="0" KeyPath="COPYRIGHT_1" Type="0"/>
+    <ROW Component="COPYRIGHT_1" ComponentId="{F83FA0E1-F144-4BA6-8D00-A89F8D052588}" Directory_="java.logging_Dir" Attributes="0" KeyPath="COPYRIGHT_3" Type="0"/>
+    <ROW Component="COPYRIGHT_2" ComponentId="{DC6F838D-B47A-4ADE-BFB9-C34CE5992F3D}" Directory_="java.management_Dir" Attributes="0" KeyPath="COPYRIGHT_4" Type="0"/>
+    <ROW Component="COPYRIGHT_3" ComponentId="{6585A65E-85B5-4CDC-B4E9-F69B4F3C6E8F}" Directory_="java.naming_Dir" Attributes="0" KeyPath="COPYRIGHT_5" Type="0"/>
+    <ROW Component="COPYRIGHT_4" ComponentId="{CF7E6B23-9216-4B8A-B352-C755E43042F3}" Directory_="java.net.http_Dir" Attributes="0" KeyPath="COPYRIGHT_6" Type="0"/>
+    <ROW Component="COPYRIGHT_5" ComponentId="{BCF1D19B-A4F3-4C56-B600-A448F9380151}" Directory_="java.prefs_Dir" Attributes="0" KeyPath="COPYRIGHT_7" Type="0"/>
+    <ROW Component="COPYRIGHT_6" ComponentId="{17DBF2FC-BF13-4687-B1C1-8D403369998B}" Directory_="java.security.sasl_Dir" Attributes="0" KeyPath="COPYRIGHT_8" Type="0"/>
+    <ROW Component="COPYRIGHT_7" ComponentId="{C5004AA0-29F4-4C22-9FDB-3EA70A8DA49F}" Directory_="java.sql_Dir" Attributes="0" KeyPath="COPYRIGHT_9" Type="0"/>
+    <ROW Component="COPYRIGHT_8" ComponentId="{B02A5DB1-6139-4B42-B81F-CF5FA0C8B5A4}" Directory_="java.transaction.xa_Dir" Attributes="0" KeyPath="COPYRIGHT_10" Type="0"/>
+    <ROW Component="COPYRIGHT_9" ComponentId="{8FDC5A1A-EB89-4306-8C99-E3F2EE42F0F0}" Directory_="jdk.unsupported_Dir" Attributes="0" KeyPath="COPYRIGHT_12" Type="0"/>
+    <ROW Component="PrismIMAPBackup.exe" ComponentId="{47E58FA8-1CE7-4D78-9395-EE0FBB1251E7}" Directory_="PrismIMAPBackup_Dir" Attributes="256" KeyPath="PrismIMAPBackup.exe"/>
+    <ROW Component="ProductInformation" ComponentId="{DB4A21E4-599D-4E72-8821-21F684AE1BA6}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="README.txt" ComponentId="{CAABFB1E-A9E4-4CA0-A48A-DB64D6C67A96}" Directory_="policy_Dir" Attributes="0" KeyPath="README.txt" Type="0"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{A4E7314A-67D3-442A-83E8-A19E8771BB70}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="aes.md" ComponentId="{047C1604-852D-4740-AE8B-E15F3753AF27}" Directory_="java.base_Dir" Attributes="0" KeyPath="aes.md" Type="0"/>
+    <ROW Component="apimswincoreconsolel110.dll" ComponentId="{6CC17404-A3C9-43E6-A824-F8CBB3516ACB}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoreconsolel110.dll"/>
+    <ROW Component="apimswincoreconsolel120.dll" ComponentId="{FACAD454-97BD-476D-AD4D-3F8EBD3BF28C}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoreconsolel120.dll"/>
+    <ROW Component="apimswincoredatetimel110.dll" ComponentId="{3C6E44EA-B11C-4EAA-BDBF-2B21E5CF5E6A}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoredatetimel110.dll"/>
+    <ROW Component="apimswincoredebugl110.dll" ComponentId="{01320A54-5CF1-4912-820F-0851B91F05BE}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoredebugl110.dll"/>
+    <ROW Component="apimswincoreerrorhandlingl110.dll" ComponentId="{79667BB1-0883-4217-8DA2-F0B9C1535B82}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoreerrorhandlingl110.dll"/>
+    <ROW Component="apimswincorefibersl110.dll" ComponentId="{08D5B3EC-195C-435E-9F4A-4AC3A6E907BB}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincorefibersl110.dll"/>
+    <ROW Component="apimswincorefilel110.dll" ComponentId="{F2179D0B-1A7F-47DD-A209-493BADD9A162}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincorefilel110.dll"/>
+    <ROW Component="apimswincorefilel120.dll" ComponentId="{6CDD887A-D51F-4350-87B1-EA83E5F23DB2}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincorefilel120.dll"/>
+    <ROW Component="apimswincorefilel210.dll" ComponentId="{698242B7-6326-42DD-8752-74B714405255}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincorefilel210.dll"/>
+    <ROW Component="apimswincorehandlel110.dll" ComponentId="{8A71E88E-F0CD-490A-98B4-578E198BE2AA}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincorehandlel110.dll"/>
+    <ROW Component="apimswincoreheapl110.dll" ComponentId="{BCF470E8-2BDA-42C5-A0EC-CB03234AC85B}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoreheapl110.dll"/>
+    <ROW Component="apimswincoreinterlockedl110.dll" ComponentId="{F3686D13-5863-4551-8A57-9986D36A7805}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoreinterlockedl110.dll"/>
+    <ROW Component="apimswincorelibraryloaderl110.dll" ComponentId="{FFAF0EB6-8CB4-4F17-B1F3-EED91D2530B4}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincorelibraryloaderl110.dll"/>
+    <ROW Component="apimswincorelocalizationl120.dll" ComponentId="{6AE4E911-ECFF-44E1-910B-1BFC91EEEA5B}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincorelocalizationl120.dll"/>
+    <ROW Component="apimswincorememoryl110.dll" ComponentId="{825B7986-5CDE-43E1-9274-5EA74BF742E7}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincorememoryl110.dll"/>
+    <ROW Component="apimswincorenamedpipel110.dll" ComponentId="{3C7E9642-BC79-4142-AB2D-210F74CFCFEC}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincorenamedpipel110.dll"/>
+    <ROW Component="apimswincoreprocessenvironmentl110.dll" ComponentId="{66FCB472-6526-4CA8-A204-3D80C4452E92}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoreprocessenvironmentl110.dll"/>
+    <ROW Component="apimswincoreprocessthreadsl110.dll" ComponentId="{90BE1CC9-EFD9-4FE5-8408-65DACFFCF5AB}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoreprocessthreadsl110.dll"/>
+    <ROW Component="apimswincoreprocessthreadsl111.dll" ComponentId="{4662D402-60AF-4B3C-B4E2-AB86402CB850}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoreprocessthreadsl111.dll"/>
+    <ROW Component="apimswincoreprofilel110.dll" ComponentId="{31C1924D-075B-45BB-AC72-C21E7C268999}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoreprofilel110.dll"/>
+    <ROW Component="apimswincorertlsupportl110.dll" ComponentId="{66E18D95-B5AC-4CA7-B047-4D291ADB98BC}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincorertlsupportl110.dll"/>
+    <ROW Component="apimswincorestringl110.dll" ComponentId="{1EBFAE59-8220-4506-A9A1-72DB4D4DBFF3}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincorestringl110.dll"/>
+    <ROW Component="apimswincoresynchl110.dll" ComponentId="{99FFB3F4-2D25-4716-A0D4-F70A2DE2AC4B}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoresynchl110.dll"/>
+    <ROW Component="apimswincoresynchl120.dll" ComponentId="{2F294CCF-B3BE-4A2D-9961-9A1075685CDB}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoresynchl120.dll"/>
+    <ROW Component="apimswincoresysinfol110.dll" ComponentId="{9630A022-CC98-4722-8393-9DFDD272DC1D}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoresysinfol110.dll"/>
+    <ROW Component="apimswincoretimezonel110.dll" ComponentId="{2BFBB0E5-118B-4B2A-B9AF-928DA8CA6B70}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoretimezonel110.dll"/>
+    <ROW Component="apimswincoreutill110.dll" ComponentId="{FEDF1F0D-A513-4FCD-850F-164C89278EF0}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincoreutill110.dll"/>
+    <ROW Component="apimswincrtconiol110.dll" ComponentId="{56A35041-4174-45A8-AC26-D36629BCD120}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrtconiol110.dll"/>
+    <ROW Component="apimswincrtconvertl110.dll" ComponentId="{D60FEF9E-F1DC-410C-B106-9AD57A58DB85}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrtconvertl110.dll"/>
+    <ROW Component="apimswincrtenvironmentl110.dll" ComponentId="{DE4650EA-D271-43C1-BF17-695F171287C1}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrtenvironmentl110.dll"/>
+    <ROW Component="apimswincrtfilesysteml110.dll" ComponentId="{0DF9E06D-BF8C-4E2F-B1CA-4347EDFF0B41}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrtfilesysteml110.dll"/>
+    <ROW Component="apimswincrtheapl110.dll" ComponentId="{F733EC3F-98D7-4A2F-BDC1-D06EA60254CC}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrtheapl110.dll"/>
+    <ROW Component="apimswincrtlocalel110.dll" ComponentId="{163CAB16-20B4-4561-9952-42B148001E3C}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrtlocalel110.dll"/>
+    <ROW Component="apimswincrtmathl110.dll" ComponentId="{73C60A8E-07D3-4E82-883A-2CF92E1B8EDD}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrtmathl110.dll"/>
+    <ROW Component="apimswincrtmultibytel110.dll" ComponentId="{B39E9980-7F01-43CD-A731-92DB1A388186}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrtmultibytel110.dll"/>
+    <ROW Component="apimswincrtprivatel110.dll" ComponentId="{909FC632-16F0-4001-92F4-A9BFFCA5C8CD}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrtprivatel110.dll"/>
+    <ROW Component="apimswincrtprocessl110.dll" ComponentId="{C0D05C09-F915-4136-8139-845E5110C93C}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrtprocessl110.dll"/>
+    <ROW Component="apimswincrtruntimel110.dll" ComponentId="{0FA2D105-A408-4957-A841-40E3A6C981B6}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrtruntimel110.dll"/>
+    <ROW Component="apimswincrtstdiol110.dll" ComponentId="{30461289-1A82-424D-82F8-5D6152B4941E}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrtstdiol110.dll"/>
+    <ROW Component="apimswincrtstringl110.dll" ComponentId="{8299C8BA-2932-40A7-98E4-89DE52C798D3}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrtstringl110.dll"/>
+    <ROW Component="apimswincrttimel110.dll" ComponentId="{25960880-F632-45A9-BFFE-09CE3130131C}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrttimel110.dll"/>
+    <ROW Component="apimswincrtutilityl110.dll" ComponentId="{37B10D31-A76A-42EA-B501-A84B6C93D619}" Directory_="bin_Dir" Attributes="256" KeyPath="apimswincrtutilityl110.dll"/>
+    <ROW Component="awt.dll" ComponentId="{8FCED628-F01C-4567-86CF-A43DC25335AA}" Directory_="bin_Dir" Attributes="256" KeyPath="awt.dll"/>
+    <ROW Component="bcel.md" ComponentId="{1ED16DAB-B542-4605-B235-099AE50F0E81}" Directory_="java.xml_Dir" Attributes="0" KeyPath="bcel.md" Type="0"/>
+    <ROW Component="blocked.certs" ComponentId="{587DED41-D53C-450A-8803-69800EFFA670}" Directory_="security_1_Dir" Attributes="0" KeyPath="blocked.certs" Type="0"/>
+    <ROW Component="classlist" ComponentId="{DE79C444-5B9A-4C23-9D20-14C3165E0C4E}" Directory_="lib_Dir" Attributes="0" KeyPath="classlist" Type="0"/>
+    <ROW Component="colorimaging.md" ComponentId="{78928E4C-5791-4E16-A81D-775F42CB5CB9}" Directory_="java.desktop_Dir" Attributes="0" KeyPath="colorimaging.md" Type="0"/>
+    <ROW Component="default_local.policy" ComponentId="{ECF18DC1-2F46-41E7-90DA-E7AA14706B03}" Directory_="limited_Dir" Attributes="0" KeyPath="default_local.policy" Type="0"/>
+    <ROW Component="default_local.policy_1" ComponentId="{21A63966-FBDA-409A-8E90-EC210A0ADF10}" Directory_="unlimited_Dir" Attributes="0" KeyPath="default_local.policy_1" Type="0"/>
+    <ROW Component="fontmanager.dll" ComponentId="{04F36AC9-A628-405E-97AB-A035A2991493}" Directory_="bin_Dir" Attributes="256" KeyPath="fontmanager.dll"/>
+    <ROW Component="freetype.dll" ComponentId="{FFA4405F-7813-4F82-A74F-2385AC0521E8}" Directory_="bin_Dir" Attributes="256" KeyPath="freetype.dll"/>
+    <ROW Component="java.dll" ComponentId="{F2D01A1D-0CC9-4E2D-AB88-40E076D46A79}" Directory_="bin_Dir" Attributes="256" KeyPath="java.dll"/>
+    <ROW Component="java.policy" ComponentId="{207D964A-7861-4BB6-90DB-7C31DA3ADBF1}" Directory_="security_Dir" Attributes="0" KeyPath="java.policy" Type="0"/>
+    <ROW Component="javajpeg.dll" ComponentId="{7B5CD1F4-B3DF-450C-8033-37D9F94FC6C8}" Directory_="bin_Dir" Attributes="256" KeyPath="javajpeg.dll"/>
+    <ROW Component="jawt.dll" ComponentId="{838E36BA-F8CB-48AC-86BE-ED980F3932B6}" Directory_="bin_Dir" Attributes="256" KeyPath="jawt.dll"/>
+    <ROW Component="jaxp.properties" ComponentId="{E59993B2-A921-40A1-B2EC-7E8EB0D7F6BF}" Directory_="conf_Dir" Attributes="0" KeyPath="jaxp.properties" Type="0"/>
+    <ROW Component="jimage.dll" ComponentId="{D8EB13A7-349B-4434-B8BF-50E519568EFA}" Directory_="bin_Dir" Attributes="256" KeyPath="jimage.dll"/>
+    <ROW Component="jli.dll" ComponentId="{E9165DA3-F0D7-4003-AA15-453E2DF3A97C}" Directory_="bin_Dir" Attributes="256" KeyPath="jli.dll"/>
+    <ROW Component="jpackage.xml" ComponentId="{32ACB027-945D-4324-A624-3553377B9A04}" Directory_="app_Dir" Attributes="0" KeyPath="jpackage.xml" Type="0"/>
+    <ROW Component="jsound.dll" ComponentId="{B55B0429-4922-49A7-B910-0EBAEDF2049E}" Directory_="bin_Dir" Attributes="256" KeyPath="jsound.dll"/>
+    <ROW Component="jvm.dll" ComponentId="{5AF3BFD7-CFCE-4DD9-AE65-08AEAA5AE236}" Directory_="server_Dir" Attributes="256" KeyPath="jvm.dll"/>
+    <ROW Component="lcms.dll" ComponentId="{5DD76D0D-7C6D-4992-8485-0AC818F88207}" Directory_="bin_Dir" Attributes="256" KeyPath="lcms.dll"/>
+    <ROW Component="management.dll" ComponentId="{643C6CBF-D353-4288-9E36-E973C07F5B37}" Directory_="bin_Dir" Attributes="256" KeyPath="management.dll"/>
+    <ROW Component="mlib_image.dll" ComponentId="{91264C16-49EC-4526-9746-56B4E0220D3A}" Directory_="bin_Dir" Attributes="256" KeyPath="mlib_image.dll"/>
+    <ROW Component="msvcp140.dll" ComponentId="{00E6371F-24BC-496F-8B69-1E2B07AEBBF6}" Directory_="bin_Dir" Attributes="256" KeyPath="msvcp140.dll"/>
+    <ROW Component="net.dll" ComponentId="{B365088A-F101-4A75-848F-CFC6DC4BFAC9}" Directory_="bin_Dir" Attributes="256" KeyPath="net.dll"/>
+    <ROW Component="nio.dll" ComponentId="{F787F22C-3507-4663-B5C2-02028D10D31A}" Directory_="bin_Dir" Attributes="256" KeyPath="nio.dll"/>
+    <ROW Component="prefs.dll" ComponentId="{6D504E2D-89D0-4587-B0F1-CA9A4C21F78A}" Directory_="bin_Dir" Attributes="256" KeyPath="prefs.dll"/>
+    <ROW Component="release" ComponentId="{333AB507-58B2-4AF0-9887-C535B0A1FCD7}" Directory_="runtime_Dir" Attributes="0" KeyPath="release" Type="0"/>
+    <ROW Component="splashscreen.dll" ComponentId="{E37ABE93-9269-41C1-A962-D098B4AA3599}" Directory_="bin_Dir" Attributes="256" KeyPath="splashscreen.dll"/>
+    <ROW Component="syslookup.dll" ComponentId="{3D50B45A-779B-43A8-AF50-C9C4E1EF1D91}" Directory_="bin_Dir" Attributes="256" KeyPath="syslookup.dll"/>
+    <ROW Component="ucrtbase.dll" ComponentId="{7927EAB6-D24A-4EC4-BC1F-F3655306058C}" Directory_="bin_Dir" Attributes="256" KeyPath="ucrtbase.dll"/>
+    <ROW Component="vcruntime140.dll" ComponentId="{EA2AB344-1AEC-490A-9173-95C763B6CB81}" Directory_="bin_Dir" Attributes="256" KeyPath="vcruntime140.dll"/>
+    <ROW Component="vcruntime140_1.dll" ComponentId="{44084684-0F7F-47C5-AB8D-61ABF11BCCC6}" Directory_="bin_Dir" Attributes="256" KeyPath="vcruntime140_1.dll"/>
+    <ROW Component="verify.dll" ComponentId="{945FE9F8-5AEB-4CDF-A01A-0420F56CF796}" Directory_="bin_Dir" Attributes="256" KeyPath="verify.dll"/>
+    <ROW Component="zip.dll" ComponentId="{AA98EF27-7357-41A2-954A-423DE13BCA39}" Directory_="bin_Dir" Attributes="256" KeyPath="zip.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="jpackage.xml" Component_="jpackage.xml" FileName="JPACKA~1.XML|.jpackage.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\app\.jpackage.xml" SelfReg="false"/>
+    <ROW File="imapbackuptool1.0SNAPSHOT.jar" Component_="jpackage.xml" FileName="IMAP-B~1.JAR|imap-backup-tool-1.0-SNAPSHOT.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\app\imap-backup-tool-1.0-SNAPSHOT.jar" SelfReg="false"/>
+    <ROW File="PrismIMAPBackup.cfg" Component_="jpackage.xml" FileName="PRISM-~1.CFG|Prism-IMAP-Backup.cfg" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\app\Prism-IMAP-Backup.cfg" SelfReg="false"/>
+    <ROW File="splash.png" Component_="jpackage.xml" FileName="splash.png" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\app\splash.png" SelfReg="false"/>
+    <ROW File="PrismIMAPBackup.exe" Component_="PrismIMAPBackup.exe" FileName="PRISM-~1.EXE|Prism-IMAP-Backup.exe" Version="65535.65535.65535.65535" Attributes="1" SourcePath="target\app-image\Prism-IMAP-Backup\Prism-IMAP-Backup.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="apimswincoreconsolel110.dll" Component_="apimswincoreconsolel110.dll" FileName="API-MS~1.DLL|api-ms-win-core-console-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-core-console-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincoreconsolel120.dll" Component_="apimswincoreconsolel120.dll" FileName="API-MS~2.DLL|api-ms-win-core-console-l1-2-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-core-console-l1-2-0.dll" SelfReg="false"/>
+    <ROW File="apimswincoredatetimel110.dll" Component_="apimswincoredatetimel110.dll" FileName="API-MS~3.DLL|api-ms-win-core-datetime-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-core-datetime-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincoredebugl110.dll" Component_="apimswincoredebugl110.dll" FileName="API-MS~4.DLL|api-ms-win-core-debug-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-core-debug-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincoreerrorhandlingl110.dll" Component_="apimswincoreerrorhandlingl110.dll" FileName="API-MS~5.DLL|api-ms-win-core-errorhandling-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-core-errorhandling-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincorefibersl110.dll" Component_="apimswincorefibersl110.dll" FileName="API-MS~6.DLL|api-ms-win-core-fibers-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-core-fibers-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincorefilel110.dll" Component_="apimswincorefilel110.dll" FileName="API-MS~7.DLL|api-ms-win-core-file-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-core-file-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincorefilel120.dll" Component_="apimswincorefilel120.dll" FileName="API-MS~8.DLL|api-ms-win-core-file-l1-2-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-core-file-l1-2-0.dll" SelfReg="false"/>
+    <ROW File="apimswincorefilel210.dll" Component_="apimswincorefilel210.dll" FileName="API-MS~9.DLL|api-ms-win-core-file-l2-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-core-file-l2-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincorehandlel110.dll" Component_="apimswincorehandlel110.dll" FileName="API-M~10.DLL|api-ms-win-core-handle-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-core-handle-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincoreheapl110.dll" Component_="apimswincoreheapl110.dll" FileName="API-M~11.DLL|api-ms-win-core-heap-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-core-heap-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincoreinterlockedl110.dll" Component_="apimswincoreinterlockedl110.dll" FileName="API-M~12.DLL|api-ms-win-core-interlocked-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-core-interlocked-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincorelibraryloaderl110.dll" Component_="apimswincorelibraryloaderl110.dll" FileName="API-M~13.DLL|api-ms-win-core-libraryloader-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-core-libraryloader-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincorelocalizationl120.dll" Component_="apimswincorelocalizationl120.dll" FileName="API-M~14.DLL|api-ms-win-core-localization-l1-2-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-core-localization-l1-2-0.dll" SelfReg="false"/>
+    <ROW File="apimswincorememoryl110.dll" Component_="apimswincorememoryl110.dll" FileName="API-M~15.DLL|api-ms-win-core-memory-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-core-memory-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincorenamedpipel110.dll" Component_="apimswincorenamedpipel110.dll" FileName="API-M~16.DLL|api-ms-win-core-namedpipe-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-core-namedpipe-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincoreprocessenvironmentl110.dll" Component_="apimswincoreprocessenvironmentl110.dll" FileName="API-M~17.DLL|api-ms-win-core-processenvironment-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-core-processenvironment-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincoreprocessthreadsl110.dll" Component_="apimswincoreprocessthreadsl110.dll" FileName="API-M~18.DLL|api-ms-win-core-processthreads-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-core-processthreads-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincoreprocessthreadsl111.dll" Component_="apimswincoreprocessthreadsl111.dll" FileName="API-M~19.DLL|api-ms-win-core-processthreads-l1-1-1.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-core-processthreads-l1-1-1.dll" SelfReg="false"/>
+    <ROW File="apimswincoreprofilel110.dll" Component_="apimswincoreprofilel110.dll" FileName="API-M~20.DLL|api-ms-win-core-profile-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-core-profile-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincorertlsupportl110.dll" Component_="apimswincorertlsupportl110.dll" FileName="API-M~21.DLL|api-ms-win-core-rtlsupport-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-core-rtlsupport-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincorestringl110.dll" Component_="apimswincorestringl110.dll" FileName="API-M~22.DLL|api-ms-win-core-string-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-core-string-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincoresynchl110.dll" Component_="apimswincoresynchl110.dll" FileName="API-M~23.DLL|api-ms-win-core-synch-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-core-synch-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincoresynchl120.dll" Component_="apimswincoresynchl120.dll" FileName="API-M~24.DLL|api-ms-win-core-synch-l1-2-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-core-synch-l1-2-0.dll" SelfReg="false"/>
+    <ROW File="apimswincoresysinfol110.dll" Component_="apimswincoresysinfol110.dll" FileName="API-M~25.DLL|api-ms-win-core-sysinfo-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-core-sysinfo-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincoretimezonel110.dll" Component_="apimswincoretimezonel110.dll" FileName="API-M~26.DLL|api-ms-win-core-timezone-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-core-timezone-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincoreutill110.dll" Component_="apimswincoreutill110.dll" FileName="API-M~27.DLL|api-ms-win-core-util-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-core-util-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrtconiol110.dll" Component_="apimswincrtconiol110.dll" FileName="API-M~28.DLL|api-ms-win-crt-conio-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-crt-conio-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrtconvertl110.dll" Component_="apimswincrtconvertl110.dll" FileName="API-M~29.DLL|api-ms-win-crt-convert-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-crt-convert-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrtenvironmentl110.dll" Component_="apimswincrtenvironmentl110.dll" FileName="API-M~30.DLL|api-ms-win-crt-environment-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-crt-environment-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrtfilesysteml110.dll" Component_="apimswincrtfilesysteml110.dll" FileName="API-M~31.DLL|api-ms-win-crt-filesystem-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-crt-filesystem-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrtheapl110.dll" Component_="apimswincrtheapl110.dll" FileName="API-M~32.DLL|api-ms-win-crt-heap-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-crt-heap-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrtlocalel110.dll" Component_="apimswincrtlocalel110.dll" FileName="API-M~33.DLL|api-ms-win-crt-locale-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-crt-locale-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrtmathl110.dll" Component_="apimswincrtmathl110.dll" FileName="API-M~34.DLL|api-ms-win-crt-math-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-crt-math-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrtmultibytel110.dll" Component_="apimswincrtmultibytel110.dll" FileName="API-M~35.DLL|api-ms-win-crt-multibyte-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-crt-multibyte-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrtprivatel110.dll" Component_="apimswincrtprivatel110.dll" FileName="API-M~36.DLL|api-ms-win-crt-private-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-crt-private-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrtprocessl110.dll" Component_="apimswincrtprocessl110.dll" FileName="API-M~37.DLL|api-ms-win-crt-process-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-crt-process-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrtruntimel110.dll" Component_="apimswincrtruntimel110.dll" FileName="API-M~38.DLL|api-ms-win-crt-runtime-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-crt-runtime-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrtstdiol110.dll" Component_="apimswincrtstdiol110.dll" FileName="API-M~39.DLL|api-ms-win-crt-stdio-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-crt-stdio-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrtstringl110.dll" Component_="apimswincrtstringl110.dll" FileName="API-M~40.DLL|api-ms-win-crt-string-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-crt-string-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrttimel110.dll" Component_="apimswincrttimel110.dll" FileName="API-M~41.DLL|api-ms-win-crt-time-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-crt-time-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="apimswincrtutilityl110.dll" Component_="apimswincrtutilityl110.dll" FileName="API-M~42.DLL|api-ms-win-crt-utility-l1-1-0.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\api-ms-win-crt-utility-l1-1-0.dll" SelfReg="false"/>
+    <ROW File="awt.dll" Component_="awt.dll" FileName="awt.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\awt.dll" SelfReg="false"/>
+    <ROW File="fontmanager.dll" Component_="fontmanager.dll" FileName="FONTMA~1.DLL|fontmanager.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\fontmanager.dll" SelfReg="false"/>
+    <ROW File="freetype.dll" Component_="freetype.dll" FileName="freetype.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\freetype.dll" SelfReg="false"/>
+    <ROW File="java.dll" Component_="java.dll" FileName="java.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\java.dll" SelfReg="false"/>
+    <ROW File="javajpeg.dll" Component_="javajpeg.dll" FileName="javajpeg.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\javajpeg.dll" SelfReg="false"/>
+    <ROW File="jawt.dll" Component_="jawt.dll" FileName="jawt.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\jawt.dll" SelfReg="false"/>
+    <ROW File="jimage.dll" Component_="jimage.dll" FileName="jimage.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\jimage.dll" SelfReg="false"/>
+    <ROW File="jli.dll" Component_="jli.dll" FileName="jli.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\jli.dll" SelfReg="false"/>
+    <ROW File="jsound.dll" Component_="jsound.dll" FileName="jsound.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\jsound.dll" SelfReg="false"/>
+    <ROW File="lcms.dll" Component_="lcms.dll" FileName="lcms.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\lcms.dll" SelfReg="false"/>
+    <ROW File="management.dll" Component_="management.dll" FileName="MANAGE~1.DLL|management.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\management.dll" SelfReg="false"/>
+    <ROW File="mlib_image.dll" Component_="mlib_image.dll" FileName="MLIB_I~1.DLL|mlib_image.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\mlib_image.dll" SelfReg="false"/>
+    <ROW File="msvcp140.dll" Component_="msvcp140.dll" FileName="msvcp140.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\msvcp140.dll" SelfReg="false"/>
+    <ROW File="net.dll" Component_="net.dll" FileName="net.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\net.dll" SelfReg="false"/>
+    <ROW File="nio.dll" Component_="nio.dll" FileName="nio.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\nio.dll" SelfReg="false"/>
+    <ROW File="prefs.dll" Component_="prefs.dll" FileName="prefs.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\prefs.dll" SelfReg="false"/>
+    <ROW File="jvm.dll" Component_="jvm.dll" FileName="jvm.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\server\jvm.dll" SelfReg="false"/>
+    <ROW File="splashscreen.dll" Component_="splashscreen.dll" FileName="SPLASH~1.DLL|splashscreen.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\splashscreen.dll" SelfReg="false"/>
+    <ROW File="syslookup.dll" Component_="syslookup.dll" FileName="SYSLOO~1.DLL|syslookup.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\syslookup.dll" SelfReg="false"/>
+    <ROW File="ucrtbase.dll" Component_="ucrtbase.dll" FileName="ucrtbase.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\ucrtbase.dll" SelfReg="false"/>
+    <ROW File="vcruntime140.dll" Component_="vcruntime140.dll" FileName="VCRUNT~1.DLL|vcruntime140.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\vcruntime140.dll" SelfReg="false"/>
+    <ROW File="vcruntime140_1.dll" Component_="vcruntime140_1.dll" FileName="VCRUNT~2.DLL|vcruntime140_1.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\vcruntime140_1.dll" SelfReg="false"/>
+    <ROW File="verify.dll" Component_="verify.dll" FileName="verify.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\verify.dll" SelfReg="false"/>
+    <ROW File="zip.dll" Component_="zip.dll" FileName="zip.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\bin\zip.dll" SelfReg="false"/>
+    <ROW File="jaxp.properties" Component_="jaxp.properties" FileName="JAXP~1.PRO|jaxp.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\conf\jaxp.properties" SelfReg="false"/>
+    <ROW File="logging.properties" Component_="jaxp.properties" FileName="LOGGIN~1.PRO|logging.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\conf\logging.properties" SelfReg="false"/>
+    <ROW File="net.properties" Component_="jaxp.properties" FileName="NET~1.PRO|net.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\conf\net.properties" SelfReg="false"/>
+    <ROW File="java.policy" Component_="java.policy" FileName="JAVA~1.POL|java.policy" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\conf\security\java.policy" SelfReg="false"/>
+    <ROW File="java.security" Component_="java.policy" FileName="JAVA~1.SEC|java.security" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\conf\security\java.security" SelfReg="false"/>
+    <ROW File="default_local.policy" Component_="default_local.policy" FileName="DEFAUL~1.POL|default_local.policy" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\conf\security\policy\limited\default_local.policy" SelfReg="false"/>
+    <ROW File="default_US_export.policy" Component_="default_local.policy" FileName="DEFAUL~2.POL|default_US_export.policy" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\conf\security\policy\limited\default_US_export.policy" SelfReg="false"/>
+    <ROW File="exempt_local.policy" Component_="default_local.policy" FileName="EXEMPT~1.POL|exempt_local.policy" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\conf\security\policy\limited\exempt_local.policy" SelfReg="false"/>
+    <ROW File="README.txt" Component_="README.txt" FileName="README.txt" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\conf\security\policy\README.txt" SelfReg="false"/>
+    <ROW File="default_local.policy_1" Component_="default_local.policy_1" FileName="DEFAUL~1.POL|default_local.policy" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\conf\security\policy\unlimited\default_local.policy" SelfReg="false"/>
+    <ROW File="default_US_export.policy_1" Component_="default_local.policy_1" FileName="DEFAUL~2.POL|default_US_export.policy" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\conf\security\policy\unlimited\default_US_export.policy" SelfReg="false"/>
+    <ROW File="sound.properties" Component_="jaxp.properties" FileName="SOUND~1.PRO|sound.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\conf\sound.properties" SelfReg="false"/>
+    <ROW File="aes.md" Component_="aes.md" FileName="aes.md" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.base\aes.md" SelfReg="false"/>
+    <ROW File="asm.md" Component_="aes.md" FileName="asm.md" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.base\asm.md" SelfReg="false"/>
+    <ROW File="clibutl.md" Component_="aes.md" FileName="c-libutl.md" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.base\c-libutl.md" SelfReg="false"/>
+    <ROW File="cldr.md" Component_="aes.md" FileName="cldr.md" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.base\cldr.md" SelfReg="false"/>
+    <ROW File="COPYRIGHT" Component_="aes.md" FileName="COPYRI~1|COPYRIGHT" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.base\COPYRIGHT" SelfReg="false"/>
+    <ROW File="icu.md" Component_="aes.md" FileName="icu.md" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.base\icu.md" SelfReg="false"/>
+    <ROW File="LICENSE" Component_="aes.md" FileName="LICENSE" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.base\LICENSE" SelfReg="false"/>
+    <ROW File="public_suffix.md" Component_="aes.md" FileName="PUBLIC~1.MD|public_suffix.md" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.base\public_suffix.md" SelfReg="false"/>
+    <ROW File="siphash.md" Component_="aes.md" FileName="siphash.md" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.base\siphash.md" SelfReg="false"/>
+    <ROW File="unicode.md" Component_="aes.md" FileName="unicode.md" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.base\unicode.md" SelfReg="false"/>
+    <ROW File="wepoll.md" Component_="aes.md" FileName="wepoll.md" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.base\wepoll.md" SelfReg="false"/>
+    <ROW File="zlib.md" Component_="aes.md" FileName="zlib.md" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.base\zlib.md" SelfReg="false"/>
+    <ROW File="COPYRIGHT_1" Component_="COPYRIGHT" FileName="COPYRI~1|COPYRIGHT" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.datatransfer\COPYRIGHT" SelfReg="false"/>
+    <ROW File="LICENSE_1" Component_="COPYRIGHT" FileName="LICENSE" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.datatransfer\LICENSE" SelfReg="false"/>
+    <ROW File="colorimaging.md" Component_="colorimaging.md" FileName="COLORI~1.MD|colorimaging.md" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.desktop\colorimaging.md" SelfReg="false"/>
+    <ROW File="COPYRIGHT_2" Component_="colorimaging.md" FileName="COPYRI~1|COPYRIGHT" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.desktop\COPYRIGHT" SelfReg="false"/>
+    <ROW File="freetype.md" Component_="colorimaging.md" FileName="freetype.md" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.desktop\freetype.md" SelfReg="false"/>
+    <ROW File="giflib.md" Component_="colorimaging.md" FileName="giflib.md" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.desktop\giflib.md" SelfReg="false"/>
+    <ROW File="harfbuzz.md" Component_="colorimaging.md" FileName="harfbuzz.md" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.desktop\harfbuzz.md" SelfReg="false"/>
+    <ROW File="jpeg.md" Component_="colorimaging.md" FileName="jpeg.md" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.desktop\jpeg.md" SelfReg="false"/>
+    <ROW File="lcms.md" Component_="colorimaging.md" FileName="lcms.md" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.desktop\lcms.md" SelfReg="false"/>
+    <ROW File="libpng.md" Component_="colorimaging.md" FileName="libpng.md" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.desktop\libpng.md" SelfReg="false"/>
+    <ROW File="LICENSE_2" Component_="colorimaging.md" FileName="LICENSE" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.desktop\LICENSE" SelfReg="false"/>
+    <ROW File="mesa3d.md" Component_="colorimaging.md" FileName="mesa3d.md" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.desktop\mesa3d.md" SelfReg="false"/>
+    <ROW File="COPYRIGHT_3" Component_="COPYRIGHT_1" FileName="COPYRI~1|COPYRIGHT" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.logging\COPYRIGHT" SelfReg="false"/>
+    <ROW File="LICENSE_3" Component_="COPYRIGHT_1" FileName="LICENSE" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.logging\LICENSE" SelfReg="false"/>
+    <ROW File="COPYRIGHT_4" Component_="COPYRIGHT_2" FileName="COPYRI~1|COPYRIGHT" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.management\COPYRIGHT" SelfReg="false"/>
+    <ROW File="LICENSE_4" Component_="COPYRIGHT_2" FileName="LICENSE" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.management\LICENSE" SelfReg="false"/>
+    <ROW File="COPYRIGHT_5" Component_="COPYRIGHT_3" FileName="COPYRI~1|COPYRIGHT" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.naming\COPYRIGHT" SelfReg="false"/>
+    <ROW File="LICENSE_5" Component_="COPYRIGHT_3" FileName="LICENSE" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.naming\LICENSE" SelfReg="false"/>
+    <ROW File="COPYRIGHT_6" Component_="COPYRIGHT_4" FileName="COPYRI~1|COPYRIGHT" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.net.http\COPYRIGHT" SelfReg="false"/>
+    <ROW File="LICENSE_6" Component_="COPYRIGHT_4" FileName="LICENSE" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.net.http\LICENSE" SelfReg="false"/>
+    <ROW File="COPYRIGHT_7" Component_="COPYRIGHT_5" FileName="COPYRI~1|COPYRIGHT" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.prefs\COPYRIGHT" SelfReg="false"/>
+    <ROW File="LICENSE_7" Component_="COPYRIGHT_5" FileName="LICENSE" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.prefs\LICENSE" SelfReg="false"/>
+    <ROW File="COPYRIGHT_8" Component_="COPYRIGHT_6" FileName="COPYRI~1|COPYRIGHT" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.security.sasl\COPYRIGHT" SelfReg="false"/>
+    <ROW File="LICENSE_8" Component_="COPYRIGHT_6" FileName="LICENSE" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.security.sasl\LICENSE" SelfReg="false"/>
+    <ROW File="COPYRIGHT_9" Component_="COPYRIGHT_7" FileName="COPYRI~1|COPYRIGHT" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.sql\COPYRIGHT" SelfReg="false"/>
+    <ROW File="LICENSE_9" Component_="COPYRIGHT_7" FileName="LICENSE" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.sql\LICENSE" SelfReg="false"/>
+    <ROW File="COPYRIGHT_10" Component_="COPYRIGHT_8" FileName="COPYRI~1|COPYRIGHT" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.transaction.xa\COPYRIGHT" SelfReg="false"/>
+    <ROW File="LICENSE_10" Component_="COPYRIGHT_8" FileName="LICENSE" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.transaction.xa\LICENSE" SelfReg="false"/>
+    <ROW File="bcel.md" Component_="bcel.md" FileName="bcel.md" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.xml\bcel.md" SelfReg="false"/>
+    <ROW File="COPYRIGHT_11" Component_="bcel.md" FileName="COPYRI~1|COPYRIGHT" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.xml\COPYRIGHT" SelfReg="false"/>
+    <ROW File="dom.md" Component_="bcel.md" FileName="dom.md" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.xml\dom.md" SelfReg="false"/>
+    <ROW File="jcup.md" Component_="bcel.md" FileName="jcup.md" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.xml\jcup.md" SelfReg="false"/>
+    <ROW File="LICENSE_11" Component_="bcel.md" FileName="LICENSE" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.xml\LICENSE" SelfReg="false"/>
+    <ROW File="xalan.md" Component_="bcel.md" FileName="xalan.md" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.xml\xalan.md" SelfReg="false"/>
+    <ROW File="xerces.md" Component_="bcel.md" FileName="xerces.md" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\java.xml\xerces.md" SelfReg="false"/>
+    <ROW File="COPYRIGHT_12" Component_="COPYRIGHT_9" FileName="COPYRI~1|COPYRIGHT" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\jdk.unsupported\COPYRIGHT" SelfReg="false"/>
+    <ROW File="LICENSE_12" Component_="COPYRIGHT_9" FileName="LICENSE" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\legal\jdk.unsupported\LICENSE" SelfReg="false"/>
+    <ROW File="classlist" Component_="classlist" FileName="CLASSL~1|classlist" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\lib\classlist" SelfReg="false"/>
+    <ROW File="fontconfig.bfc" Component_="classlist" FileName="FONTCO~1.BFC|fontconfig.bfc" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\lib\fontconfig.bfc" SelfReg="false"/>
+    <ROW File="fontconfig.properties.src" Component_="classlist" FileName="FONTCO~1.SRC|fontconfig.properties.src" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\lib\fontconfig.properties.src" SelfReg="false"/>
+    <ROW File="jawt.lib" Component_="classlist" FileName="jawt.lib" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\lib\jawt.lib" SelfReg="false"/>
+    <ROW File="jrtfs.jar" Component_="classlist" FileName="jrt-fs.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\lib\jrt-fs.jar" SelfReg="false"/>
+    <ROW File="jvm.cfg" Component_="classlist" FileName="jvm.cfg" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\lib\jvm.cfg" SelfReg="false"/>
+    <ROW File="jvm.lib" Component_="classlist" FileName="jvm.lib" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\lib\jvm.lib" SelfReg="false"/>
+    <ROW File="modules" Component_="classlist" FileName="modules" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\lib\modules" SelfReg="false"/>
+    <ROW File="psfont.properties.ja" Component_="classlist" FileName="PSFONT~1.JA|psfont.properties.ja" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\lib\psfont.properties.ja" SelfReg="false"/>
+    <ROW File="psfontj2d.properties" Component_="classlist" FileName="PSFONT~1.PRO|psfontj2d.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\lib\psfontj2d.properties" SelfReg="false"/>
+    <ROW File="blocked.certs" Component_="blocked.certs" FileName="BLOCKE~1.CER|blocked.certs" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\lib\security\blocked.certs" SelfReg="false"/>
+    <ROW File="cacerts" Component_="blocked.certs" FileName="cacerts" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\lib\security\cacerts" SelfReg="false"/>
+    <ROW File="default.policy" Component_="blocked.certs" FileName="DEFAUL~1.POL|default.policy" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\lib\security\default.policy" SelfReg="false"/>
+    <ROW File="public_suffix_list.dat" Component_="blocked.certs" FileName="PUBLIC~1.DAT|public_suffix_list.dat" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\lib\security\public_suffix_list.dat" SelfReg="false"/>
+    <ROW File="tzdb.dat" Component_="classlist" FileName="tzdb.dat" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\lib\tzdb.dat" SelfReg="false"/>
+    <ROW File="tzmappings" Component_="classlist" FileName="TZMAPP~1|tzmappings" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\lib\tzmappings" SelfReg="false"/>
+    <ROW File="release" Component_="release" FileName="release" Version="65535.65535.65535.65535" Attributes="0" SourcePath="target\app-image\Prism-IMAP-Backup\runtime\release" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrapperUISequenceComponent">
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="249"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="251"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="I:\My Drive\Akas\EXE" PackageFileName="[|AI_AIP_FILENAME]" Languages="en" InstallationType="4" CabsLocation="1" PackageType="1" FilesInsideExe="true" ExeIconPath="installer-assets\logo.ico" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" UseLargeSchema="true" ExeName="Prism-IMAP-Backup-Setup"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="Themes.aip" Path="&lt;AI_FRAGS&gt;Themes.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_DeleteLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_DeleteRLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractFiles" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractLzma" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_LM" Builds="DefaultBuild"/>
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_CU" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="Prereq.dll" SourcePath="&lt;AI_CUSTACTS&gt;Prereq.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="banner.bmp" SourcePath="installer-assets\banner.bmp"/>
+    <ROW Name="dialog.bmp" SourcePath="installer-assets\dialog.bmp"/>
+    <ROW Name="lzmaextractor.dll" SourcePath="&lt;AI_CUSTACTS&gt;lzmaextractor.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH_ORIGINAL" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DATA_SETTER" Type="51" Source="CustomActionData" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DeleteCadLzma" Type="51" Source="AI_DeleteLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteLzma" Type="1025" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DeleteRCadLzma" Type="51" Source="AI_DeleteRLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteRLzma" Type="1281" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_ExtractCadLzma" Type="51" Source="AI_ExtractLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_ExtractFiles" Type="1" Source="Prereq.dll" Target="ExtractSourceFiles" AdditionalSeq="AI_DATA_SETTER"/>
+    <ROW Action="AI_ExtractLzma" Type="1025" Source="lzmaextractor.dll" Target="ExtractLZMAFiles"/>
+    <ROW Action="AI_FindExeLzma" Type="1" Source="lzmaextractor.dll" Target="FindEXE"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Type="65" Source="aicustact.dll" Target="PreserveInstallType"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH" Target="[AI_SETUPEXEPATH_ORIGINAL]"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="jpackage.xml"/>
+    <ROW Feature_="MainFeature" Component_="PrismIMAPBackup.exe"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoreconsolel110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoreconsolel120.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoredatetimel110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoredebugl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoreerrorhandlingl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincorefibersl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincorefilel110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincorefilel120.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincorefilel210.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincorehandlel110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoreheapl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoreinterlockedl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincorelibraryloaderl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincorelocalizationl120.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincorememoryl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincorenamedpipel110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoreprocessenvironmentl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoreprocessthreadsl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoreprocessthreadsl111.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoreprofilel110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincorertlsupportl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincorestringl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoresynchl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoresynchl120.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoresysinfol110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoretimezonel110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincoreutill110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrtconiol110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrtconvertl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrtenvironmentl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrtfilesysteml110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrtheapl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrtlocalel110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrtmathl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrtmultibytel110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrtprivatel110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrtprocessl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrtruntimel110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrtstdiol110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrtstringl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrttimel110.dll"/>
+    <ROW Feature_="MainFeature" Component_="apimswincrtutilityl110.dll"/>
+    <ROW Feature_="MainFeature" Component_="awt.dll"/>
+    <ROW Feature_="MainFeature" Component_="fontmanager.dll"/>
+    <ROW Feature_="MainFeature" Component_="freetype.dll"/>
+    <ROW Feature_="MainFeature" Component_="java.dll"/>
+    <ROW Feature_="MainFeature" Component_="javajpeg.dll"/>
+    <ROW Feature_="MainFeature" Component_="jawt.dll"/>
+    <ROW Feature_="MainFeature" Component_="jimage.dll"/>
+    <ROW Feature_="MainFeature" Component_="jli.dll"/>
+    <ROW Feature_="MainFeature" Component_="jsound.dll"/>
+    <ROW Feature_="MainFeature" Component_="lcms.dll"/>
+    <ROW Feature_="MainFeature" Component_="management.dll"/>
+    <ROW Feature_="MainFeature" Component_="mlib_image.dll"/>
+    <ROW Feature_="MainFeature" Component_="msvcp140.dll"/>
+    <ROW Feature_="MainFeature" Component_="net.dll"/>
+    <ROW Feature_="MainFeature" Component_="nio.dll"/>
+    <ROW Feature_="MainFeature" Component_="prefs.dll"/>
+    <ROW Feature_="MainFeature" Component_="jvm.dll"/>
+    <ROW Feature_="MainFeature" Component_="splashscreen.dll"/>
+    <ROW Feature_="MainFeature" Component_="syslookup.dll"/>
+    <ROW Feature_="MainFeature" Component_="ucrtbase.dll"/>
+    <ROW Feature_="MainFeature" Component_="vcruntime140.dll"/>
+    <ROW Feature_="MainFeature" Component_="vcruntime140_1.dll"/>
+    <ROW Feature_="MainFeature" Component_="verify.dll"/>
+    <ROW Feature_="MainFeature" Component_="zip.dll"/>
+    <ROW Feature_="MainFeature" Component_="jaxp.properties"/>
+    <ROW Feature_="MainFeature" Component_="java.policy"/>
+    <ROW Feature_="MainFeature" Component_="default_local.policy"/>
+    <ROW Feature_="MainFeature" Component_="README.txt"/>
+    <ROW Feature_="MainFeature" Component_="default_local.policy_1"/>
+    <ROW Feature_="MainFeature" Component_="aes.md"/>
+    <ROW Feature_="MainFeature" Component_="COPYRIGHT"/>
+    <ROW Feature_="MainFeature" Component_="colorimaging.md"/>
+    <ROW Feature_="MainFeature" Component_="COPYRIGHT_1"/>
+    <ROW Feature_="MainFeature" Component_="COPYRIGHT_2"/>
+    <ROW Feature_="MainFeature" Component_="COPYRIGHT_3"/>
+    <ROW Feature_="MainFeature" Component_="COPYRIGHT_4"/>
+    <ROW Feature_="MainFeature" Component_="COPYRIGHT_5"/>
+    <ROW Feature_="MainFeature" Component_="COPYRIGHT_6"/>
+    <ROW Feature_="MainFeature" Component_="COPYRIGHT_7"/>
+    <ROW Feature_="MainFeature" Component_="COPYRIGHT_8"/>
+    <ROW Feature_="MainFeature" Component_="bcel.md"/>
+    <ROW Feature_="MainFeature" Component_="COPYRIGHT_9"/>
+    <ROW Feature_="MainFeature" Component_="classlist"/>
+    <ROW Feature_="MainFeature" Component_="blocked.certs"/>
+    <ROW Feature_="MainFeature" Component_="release"/>
+    <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
+    <ROW Feature_="MainFeature" Component_="AI_ExePath"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="logo.exe" SourcePath="installer-assets\logo.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1397"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99" Builds="DefaultBuild"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="199" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="198" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="197" Builds="DefaultBuild"/>
+    <ROW Action="AI_FindExeLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="196" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1549" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1548" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="6599" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractFiles" Sequence="1399" Builds="DefaultBuild"/>
+    <ROW Action="AI_DATA_SETTER" Sequence="1398"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 600)" Description="[ProductName] cannot be installed on [WindowsTypeNT60Display]." DescriptionLocId="AI.LaunchCondition.NoNT60" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="SETUPEXEDIR OR (REMOVE=&quot;ALL&quot;)" Description="This package can only be run from a bootstrapper." DescriptionLocId="AI.LaunchCondition.RequireBootstrapper" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
+    <ROW Signature_="AI_EXE_PATH_CU" Root="1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+    <ROW Signature_="AI_EXE_PATH_LM" Root="2" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="AI_ExePath" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Value="[AI_SETUPEXEPATH]" Component_="AI_ExePath"/>
+    <ROW Registry="AdvancedInstaller" Root="-1" Key="Software\Caphyon\Advanced Installer" Name="\"/>
+    <ROW Registry="Caphyon" Root="-1" Key="Software\Caphyon" Name="\"/>
+    <ROW Registry="LZMA" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA" Name="\"/>
+    <ROW Registry="Manufacturer" Root="-1" Key="Software\[Manufacturer]" Name="\"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="ProductCode" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]" Name="\"/>
+    <ROW Registry="ProductName" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="\"/>
+    <ROW Registry="ProductVersion" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="\"/>
+    <ROW Registry="Software" Root="-1" Key="Software" Name="\"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="PrismIMAPBackupTool" Directory_="DesktopFolder" Name="PRISMI~1|Prism IMAP Backup Tool" Component_="apimswincorertlsupportl110.dll" Target="[APPDIR]Prism-IMAP-Backup\Prism-IMAP-Backup.exe" Hotkey="0" Icon_="logo.exe" IconIndex="0" ShowCmd="1"/>
+    <ROW Shortcut="PrismIMAPBackupTool_1" Directory_="SHORTCUTDIR" Name="PRISMI~1|Prism IMAP Backup Tool" Component_="apimswincorertlsupportl110.dll" Target="[APPDIR]Prism-IMAP-Backup\Prism-IMAP-Backup.exe" Hotkey="0" Icon_="logo.exe" IconIndex="0" ShowCmd="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>

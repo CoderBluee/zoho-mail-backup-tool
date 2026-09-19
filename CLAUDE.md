@@ -1,0 +1,1 @@
+You must read `GEMINI.md` in the project root before performing any task. It contains project overview, build commands, architecture, file structure, known issues, and other critical context for working on this codebase.
